@@ -119,6 +119,11 @@
             <exclude>UserAgents/**/*.tab</exclude>
             <exclude>UserAgents/**/*.md</exclude>
           </excludes>
+          <archive>
+            <manifestEntries>
+              <Automatic-Module-Name>nl.basjes.yauaa</Automatic-Module-Name>
+            </manifestEntries>
+          </archive>
         </configuration>
       </plugin>
 

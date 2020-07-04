@@ -1250,7 +1250,7 @@ config:
 
     private final List<FieldCalculator> fieldCalculators = new ArrayList<>();
 
-    protected void setFieldCalculators(List<FieldCalculator> newFieldCalculators) {
+    void setFieldCalculators(List<FieldCalculator> newFieldCalculators) {
         fieldCalculators.addAll(newFieldCalculators);
     }
 
