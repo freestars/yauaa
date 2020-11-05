@@ -19,8 +19,11 @@ module nl.basjes.parse.useragent.yauaa {
     exports nl.basjes.parse.useragent;
     exports nl.basjes.parse.useragent.analyze;
 
-    opens nl.basjes.parse.useragent.analyze to com.esotericsoftware.kryo;
-    opens nl.basjes.parse.useragent to org.apache.commons.lang3;
+    opens nl.basjes.parse.useragent           to com.esotericsoftware.kryo, org.apache.commons.lang3;
+    opens nl.basjes.parse.useragent.debug     to com.esotericsoftware.kryo;
+    opens nl.basjes.parse.useragent.analyze   to com.esotericsoftware.kryo;
+    opens nl.basjes.parse.useragent.calculate to com.esotericsoftware.kryo;
+    opens nl.basjes.parse.useragent.parse to com.esotericsoftware.kryo;
 
     requires org.slf4j;
     requires org.antlr.antlr4.runtime;
@@ -30,8 +33,7 @@ module nl.basjes.parse.useragent.yauaa {
     requires org.yaml.snakeyaml;
     requires spring.core;
 
-//    requires org.apache.httpcomponents.client5.httpclient5;
-    requires httpclient5;
+    requires org.apache.httpcomponents.client5.httpclient5;
     requires com.esotericsoftware.kryo;
     requires nl.basjes.collections.prefixmap;
 }
