@@ -752,6 +752,7 @@
             <configLocation>checkstyle/checkstyle.xml</configLocation>
             <suppressionsLocation>checkstyle/suppressions.xml</suppressionsLocation>
             <includeTestSourceDirectory>true</includeTestSourceDirectory>
+            <excludes>**/module-info.java</excludes>
           </configuration>
           <!-- Runs by default in the verify phase  (mvn verify or later in the build cycle)
                the 'check' goal will fail the build if it does not pass.  "mvn checkstyle:check"
@@ -886,7 +887,7 @@
   <modules>
     <module>devtools</module>
     <module>analyzer</module>
-    <module>serialization</module>
+    <module>analyzer-it</module>
     <module>udfs</module>
     <module>webapp</module>
     <module>commandline</module>

@@ -29,8 +29,8 @@
 
   <packaging>jar</packaging>
 
-  <artifactId>yauaa-serialization-tests-java-kryo-4</artifactId>
-  <name>Yauaa : Serialization Tests : Java Kryo 4</name>
+  <artifactId>yauaa-serialization-tests-java</artifactId>
+  <name>Yauaa : IT : Serialization : Java Default</name>
 
   <dependencies>
     <dependency>
@@ -52,12 +52,13 @@
       <scope>test</scope>
     </dependency>
 
-    <dependency>
-      <groupId>com.esotericsoftware</groupId>
-      <artifactId>kryo</artifactId>
-      <version>${kryo4.version}</version>
-      <scope>test</scope>
-    </dependency>
+<!--    DO NOT ADD KRYO AS A DEPENDENCY HERE-->
+<!--    <dependency>-->
+<!--      <groupId>com.esotericsoftware</groupId>-->
+<!--      <artifactId>kryo</artifactId>-->
+<!--      <version>4.0.2</version>-->
+<!--      <scope>test</scope>-->
+<!--    </dependency>-->
 
     <dependency>
       <groupId>nl.basjes.parse.useragent</groupId>

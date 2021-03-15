@@ -17,7 +17,7 @@
 
 package nl.basjes.parse.useragent;
 
-import nl.basjes.parse.useragent.utils.YauaaVersion;
+import nl.basjes.parse.useragent.version.YauaaVersion;
 
 public final class Version extends YauaaVersion.AbstractVersion {
 

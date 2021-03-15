@@ -44,7 +44,7 @@ import static nl.basjes.parse.useragent.UserAgent.USERAGENT_FIELDNAME;
 import static nl.basjes.parse.useragent.commandline.Main.OutputFormat.CSV;
 import static nl.basjes.parse.useragent.commandline.Main.OutputFormat.JSON;
 import static nl.basjes.parse.useragent.commandline.Main.OutputFormat.YAML;
-import static nl.basjes.parse.useragent.utils.YauaaVersion.logVersion;
+import static nl.basjes.parse.useragent.version.YauaaVersion.logVersion;
 
 public final class Main {
     private Main() {

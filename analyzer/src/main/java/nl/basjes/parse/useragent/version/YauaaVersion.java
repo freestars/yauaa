@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package nl.basjes.parse.useragent.utils;
+package nl.basjes.parse.useragent.version;
 
 import nl.basjes.parse.useragent.Version;
 import nl.basjes.parse.useragent.analyze.InvalidParserConfigurationException;

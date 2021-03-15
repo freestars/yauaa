@@ -46,7 +46,7 @@ import static nl.basjes.parse.useragent.servlet.ParseService.getUserAgentAnalyze
 import static nl.basjes.parse.useragent.servlet.ParseService.userAgentAnalyzerIsAvailable;
 import static nl.basjes.parse.useragent.servlet.api.Utils.splitPerFilledLine;
 import static nl.basjes.parse.useragent.servlet.utils.Constants.GIT_REPO_URL;
-import static nl.basjes.parse.useragent.utils.YauaaVersion.getVersion;
+import static nl.basjes.parse.useragent.version.YauaaVersion.getVersion;
 import static org.apache.commons.text.StringEscapeUtils.escapeHtml4;
 
 @Api(tags = "Yauaa")

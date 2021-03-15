@@ -15,17 +15,9 @@
  * limitations under the License.
  */
 
-module nl.basjes.parse.useragent.yauaa {
-    exports nl.basjes.parse.useragent;
-    exports nl.basjes.parse.useragent.version;
+module es.basj.test {
+    requires nl.basjes.parse.useragent;
 
-    opens nl.basjes.parse.useragent           to com.esotericsoftware.kryo, org.apache.commons.lang3;
-    opens nl.basjes.parse.useragent.debug     to com.esotericsoftware.kryo;
-    opens nl.basjes.parse.useragent.analyze   to com.esotericsoftware.kryo;
-    opens nl.basjes.parse.useragent.calculate to com.esotericsoftware.kryo;
-    opens nl.basjes.parse.useragent.parse to com.esotericsoftware.kryo;
-
-    // You'll get many "requires directive for an automatic module"
     requires org.slf4j;
     requires org.antlr.antlr4.runtime;
     requires org.apache.commons.text;

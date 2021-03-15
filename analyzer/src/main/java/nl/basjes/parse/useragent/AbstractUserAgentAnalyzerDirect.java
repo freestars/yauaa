@@ -157,8 +157,8 @@ import static nl.basjes.parse.useragent.utils.YamlUtils.getValueAsSequenceNode;
 import static nl.basjes.parse.useragent.utils.YamlUtils.getValueAsString;
 import static nl.basjes.parse.useragent.utils.YamlUtils.require;
 import static nl.basjes.parse.useragent.utils.YamlUtils.requireNodeInstanceOf;
-import static nl.basjes.parse.useragent.utils.YauaaVersion.assertSameVersion;
-import static nl.basjes.parse.useragent.utils.YauaaVersion.logVersion;
+import static nl.basjes.parse.useragent.version.YauaaVersion.assertSameVersion;
+import static nl.basjes.parse.useragent.version.YauaaVersion.logVersion;
 
 @DefaultSerializer(AbstractUserAgentAnalyzerDirect.KryoSerializer.class)
 public abstract class AbstractUserAgentAnalyzerDirect implements Analyzer, Serializable {

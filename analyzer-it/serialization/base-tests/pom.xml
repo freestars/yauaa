@@ -29,8 +29,8 @@
 
   <packaging>jar</packaging>
 
-  <artifactId>yauaa-serialization-tests-java</artifactId>
-  <name>Yauaa : Serialization Tests : Java Default</name>
+  <artifactId>yauaa-serialization-tests-lib</artifactId>
+  <name>Yauaa : IT : Serialization : Testing library</name>
 
   <dependencies>
     <dependency>
@@ -52,22 +52,31 @@
       <scope>test</scope>
     </dependency>
 
-<!--    DO NOT ADD KRYO AS A DEPENDENCY HERE-->
-<!--    <dependency>-->
-<!--      <groupId>com.esotericsoftware</groupId>-->
-<!--      <artifactId>kryo</artifactId>-->
-<!--      <version>4.0.2</version>-->
-<!--      <scope>test</scope>-->
-<!--    </dependency>-->
-
     <dependency>
-      <groupId>nl.basjes.parse.useragent</groupId>
-      <artifactId>yauaa-serialization-tests-lib</artifactId>
-      <version>${project.version}</version>
-      <classifier>tests</classifier>
-      <scope>test</scope>
+      <groupId>com.esotericsoftware</groupId>
+      <artifactId>kryo</artifactId>
+      <version>4.0.2</version>
+      <!-- DO NOT ADD KRYO AS A FULL DEPENDENCY HERE -->
+      <scope>provided</scope>
     </dependency>
 
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>test-jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
