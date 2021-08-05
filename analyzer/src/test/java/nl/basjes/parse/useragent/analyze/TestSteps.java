@@ -50,6 +50,7 @@ import nl.basjes.parse.useragent.analyze.treewalker.steps.walk.StepNextN;
 import nl.basjes.parse.useragent.analyze.treewalker.steps.walk.StepPrev;
 import nl.basjes.parse.useragent.analyze.treewalker.steps.walk.StepPrevN;
 import nl.basjes.parse.useragent.analyze.treewalker.steps.walk.StepUp;
+import nl.basjes.parse.useragent.parse.AgentPathFragment;
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.junit.jupiter.api.BeforeAll;
@@ -62,6 +63,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import static nl.basjes.parse.useragent.parse.AgentPathFragment.BASE64;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
@@ -318,7 +320,7 @@ class TestSteps {
 
     @Test
     void testStepDown() {
-        Step step = new StepDown(new NumberRangeList(2, 3), "something");
+        Step step = new StepDown(new NumberRangeList(2, 3), BASE64);
         assertNull(step.walk(dummyTree, null));
     }
 
